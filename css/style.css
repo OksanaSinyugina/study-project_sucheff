@@ -106,6 +106,9 @@ a{
     line-height: 15px; 
     color: #191C1D;
 }
+.header__search-icon{
+    cursor: pointer;
+}
 /* тело страницы */
 .page-body{
     width: 1150px;
@@ -190,7 +193,122 @@ a{
     color: #FFFFFF;
 }
 
-
+/* hot deals */
+.product-cards-inner{
+    padding-bottom: 80px;
+}
+.product-cards__header{
+    margin-bottom: 30px;
+}
+.product-cards__title{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FF8D40;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 30px; 
+    align-items: start;
+    
+}
+.card{
+    /* height: 410px; */
+    border-radius: 30px;
+    background: #fff;
+    overflow: hidden;
+    /* cursor: pointer; */
+    
+}
+.card__image-box{
+    height: 190px;
+    
+    position: relative;
+}
+.card__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+    /* transition: all .3s; */
+}
+.card:focus .card__img{
+    filter: brightness(100%);
+}
+.card__text{
+    border-bottom: 1px solid #F2F2F2;
+}
+.card__title{
+    font-size: 22px;
+    line-height: 25px;
+    margin: 20px 10px 50px 10px;
+    /* transition: all .3s; */
+}
+.card:focus .card__title{
+    color: #FF8D40;
+}
+.card__info{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #5C5F60;
+    margin: 0px 10px 20px 10px;
+}
+.card__ingredients{
+    padding: 10px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    display: none;
+    /* transition: all .3s; */
+}
+.card:focus .card__ingredients{
+    display: block;
+}
+.card__order{
+    display: flex;
+    padding: 22.5px 10px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.prices{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.card__old-price{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #444748;
+    position: relative;
+}
+.card__old-price:before {
+    border-bottom: 3px solid #FF8D40;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    transform: rotate(-9.55deg);
+  }
+.card__price{
+    font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+}
+.card__order-button{
+    padding: 10px 16px;
+    background: #FF8D40;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.card__order-button:hover{
+    background: #E76E0E;
+}
 /* seo */
 
 .seo-inner{
